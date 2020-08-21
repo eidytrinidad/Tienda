@@ -14,23 +14,31 @@ display:flex;
 flex-direction:column;
 float:right;
 margin-top:10px;
-z-index:1;
-/* position:absolute;
-right:5%;
-top:15%; */
+
+@media (max-width:768px) {
+    
+display:none;
+}
+
 
 a{
+    border-radius:50%;
     margin-bottom:0.7rem;
+    padding: 0.4rem;
+    display:flex;
+    justify-content:center;
+    &:hover{
+        background-color:#ff5b25;
+        
+    }
 }
 
 `
 
 function Socials() {
     const [,,iconColor] = useContext(TiendaContext);
-    console.log(iconColor)
-    // const [src, setSrc] = useState()
-    // iconColor ? setSrc(FBblanco) : setSrc(FB)
-   console.log()
+  
+   
     return (
        <Section>
           

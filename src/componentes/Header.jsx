@@ -1,4 +1,4 @@
-import React,{useContext} from 'react'
+import React,{useContext,useState} from 'react'
 import logo from '../img/LOGO.png'
 import carrito from '../img/Carrito.png'
 import lupa from '../img/Lupa.png'
@@ -8,13 +8,25 @@ import {Link }from 'react-router-dom'
 import { TiendaContext } from "../componentes/TiendaProvider";
 
 function Header() {
-    const [,,iconColor] = useContext(TiendaContext);
+    const [,,iconColor,,burger, setburger] = useContext(TiendaContext);
+
+    
+
+   const handleBurguer=()=>{
+            if(burger){
+                setburger(false)
+            }else{
+                setburger(true)
+            }
+    }
     return (
         <header>
          
             <article className="logo">
                 <img src={logo} alt=""/>
             </article>
+
+            <button onClick={handleBurguer}className="btnBurger"><i className={burger ? "fas fa-times":"fas fa-bars"}></i></button>
  
             <nav className="menu">
                 <Link  to={{ pathname:"/"}}>Inicio</Link>

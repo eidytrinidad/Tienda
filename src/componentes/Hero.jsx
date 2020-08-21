@@ -1,6 +1,7 @@
 import React,{useEffect,useContext} from "react";
 import Audifonos from '../img/audifonos.png'
-import bgInicio from "../img/fondo5.png";
+import Audifonos2 from '../img/Audifonos2.png'
+import bgInicio from "../img/fondo6.png";
 import { TiendaContext } from "../componentes/TiendaProvider";
 function Hero() {
   const [background, setBackground,,setIconColor] = useContext(TiendaContext);
@@ -18,6 +19,11 @@ function Hero() {
       <article className="audifonos">
           <img src={Audifonos} alt=""/>
       </article>
+
+      <article className="audifonos2">
+          <img src={Audifonos2} alt=""/>
+      </article>
+      <button className="btnVerMas2">VER MAS</button>
      </div>
     </section>
   );

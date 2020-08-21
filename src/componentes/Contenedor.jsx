@@ -5,11 +5,11 @@ import Hero from "./Hero";
 import Socials from "./Socials";
 import Tienda from "./Tienda";
 import styled from "styled-components";
-import bgInicio from "../img/fondo5.png";
 import { TiendaContext } from "../componentes/TiendaProvider";
+import BurgerMenu from "./BurguerMenu";
 
 function Contenedor() {
-  const [background, setBackground] = useContext(TiendaContext);
+  const [background,,,,burger, setburger] = useContext(TiendaContext);
 
   const Container = styled.div`
     background-image: url(${background});
@@ -25,7 +25,10 @@ function Contenedor() {
     <>
     
       <Container>
+        
         <Router>
+     { burger ? <BurgerMenu/>:null}
+   
           <div className="contenedor">
             <Header />
             <Socials />
