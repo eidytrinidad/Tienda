@@ -9,7 +9,7 @@ import { TiendaContext } from "../componentes/TiendaProvider";
 import BurgerMenu from "./BurguerMenu";
 
 function Contenedor() {
-  const [background,,,,burger, setburger] = useContext(TiendaContext);
+  const [background,,,,burger, ] = useContext(TiendaContext);
 
   const Container = styled.div`
     background-image: url(${background});

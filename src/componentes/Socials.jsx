@@ -1,4 +1,4 @@
-import React,{useEffect,useContext,useState} from 'react'
+import React,{useContext} from 'react'
 import { TiendaContext } from "../componentes/TiendaProvider";
 import FB from '../img/FB.png'
 import TW from '../img/TW.png'

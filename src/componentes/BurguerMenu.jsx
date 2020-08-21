@@ -8,7 +8,7 @@ import {Link }from 'react-router-dom'
 import { TiendaContext } from "../componentes/TiendaProvider";
 
 function BurgerMenu() {
-    const [,,iconColor,,burger, setburger] = useContext(TiendaContext);
+    const [,,,,, setburger] = useContext(TiendaContext);
     return (
         <section>
             <nav className="BurgerMenu">

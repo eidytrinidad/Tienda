@@ -8,7 +8,7 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        width: 100%;
+        width: 80%;
 
         .producto {
         z-index: 1;
@@ -26,14 +26,15 @@
 
 
             .imagen {
-                width: 100%;
-                max-width: 30px;
+                width: 90%;
+               max-width: 50px;
                
-                //max-width: 50px;
-           
-
+                
                 img {
                     width: 100%;
+                      max-width: 30px;
+                      height: 90px;
+                      
                 }
             }
 
@@ -80,7 +81,15 @@
                     border-radius: 24px;
                     color: $Blanco;
                     font-size: 18px;
-
+                    &:hover{
+                        background-color: $Negro;
+                        color:$Blanco ;
+                        cursor: pointer;
+                    }
+                    &:focus{
+                        outline: none;
+                        
+                    }
                     img {
 
                         width: 20px;
